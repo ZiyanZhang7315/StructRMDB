@@ -1,2 +1,4 @@
 # StructRMDB
-The simulation code and data for StructRMDB database
+These file is the simulation code for StructRMDB database.
+
+##Pre-RNA pipeline
