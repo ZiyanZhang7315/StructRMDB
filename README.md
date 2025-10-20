@@ -11,7 +11,7 @@ These files contain the simulation code for the **StructRMDB** database.
 - TxDb file  
 
 **Output:**  
-- Modified and unmodified sequences for each site  
+- Modified and unmodified Pre RNA sequences for each site  
 - Transcript name and genomic location information  
 
 ---
@@ -55,24 +55,23 @@ These files contain the simulation code for the **StructRMDB** database.
 - TxDb file  
 
 **Output:**  
-- Modified and unmodified sequences for each site  
-- Transcript name and genomic location information  
+- exon sequence
+- exon information 
 
 ---
 
-### 1. `matureRNA_sequence.R`
+### 2. `matureRNA_sequence.R`
 **Input:**  
-- Genome file  
-- GTF file  
-- TxDb file  
+- exon sequence
+- exon information  
 
 **Output:**  
-- Modified and unmodified sequences for each site  
+- Modified and unmodified mature RNA sequences for each site  
 - Transcript name and genomic location information  
 
 ---
 
-### 2. `Secondary_structure_prediction_rnastructure.sh` and `Secondary_structure_prediction_viennaRNA.sh`
+### 3. `Secondary_structure_prediction_rnastructure.sh` and `Secondary_structure_prediction_viennaRNA.sh`
 **Input:**  
 - Modified and unmodified sequences for each site  
 
@@ -84,7 +83,7 @@ These files contain the simulation code for the **StructRMDB** database.
 
 ---
 
-### 3. `RNAsmc_score_and_combine.R`
+### 4. `RNAsmc_score_and_combine.R`
 **Input:**  
 - Predicted secondary structures with MFE and RNAforester scores  
 
@@ -94,7 +93,7 @@ These files contain the simulation code for the **StructRMDB** database.
 
 ---
 
-### 4. `Secondary_structure_visualization.R`
+### 5. `Secondary_structure_visualization.R`
 **Input:**  
 - Secondary structure CT file  
 - Site location file  
